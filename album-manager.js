@@ -13,7 +13,7 @@ class TrekkingAlbumManager {
     this.dbName = 'BinayakTrekkingAlbumsDB_v6';
     this.dbVersion = 1;
     this.db = null;
-    this.ownerPin = 'binayak';
+    this.ownerPin = 'Bam';
     this.isOwner = localStorage.getItem('binayak_album_admin') === 'true' || sessionStorage.getItem('binayak_album_admin') === 'true';
     this.removedKeys = new Set(JSON.parse(localStorage.getItem('binayak_removed_media_' + this.albumKey) || '[]'));
     this.currentFilter = 'all';
@@ -273,7 +273,7 @@ class TrekkingAlbumManager {
 
   processOwnerLogin() {
     const val = this.ownerPasscodeInput ? this.ownerPasscodeInput.value.trim().toLowerCase() : '';
-    if (val === this.ownerPin.toLowerCase() || val === '1234' || val === 'binayakdhakal') {
+    if (val === 'bam' || val === this.ownerPin.toLowerCase()) {
       this.isOwner = true;
       localStorage.setItem('binayak_album_admin', 'true');
       this.closeOwnerModal();
