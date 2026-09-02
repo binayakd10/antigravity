@@ -1,0 +1,558 @@
+[
+  {
+    "type": "image",
+    "path": "assets/binayak_annapurna.jpg",
+    "caption": "North Annapurna Base Camp (4,190m) Landmark Sign",
+    "location": "North ABC, Myagdi",
+    "size": "Original"
+  },
+  {
+    "type": "video",
+    "filename": "2026-05-19-135103800.mp4",
+    "path": "assets/north%20abc/2026-05-19-135103800.mp4",
+    "raw_path": "assets/north abc/2026-05-19-135103800.mp4",
+    "caption": "North ABC \u2022 2026 05 19 135103800",
+    "location": "North ABC \u2022 4,190m",
+    "size": "42.24 MB"
+  },
+  {
+    "type": "video",
+    "filename": "2026-05-21-103228626.mp4",
+    "path": "assets/north%20abc/2026-05-21-103228626.mp4",
+    "raw_path": "assets/north abc/2026-05-21-103228626.mp4",
+    "caption": "North ABC \u2022 2026 05 21 103228626",
+    "location": "North ABC \u2022 4,190m",
+    "size": "28.77 MB"
+  },
+  {
+    "type": "video",
+    "filename": "2026-05-21-104653891.mp4",
+    "path": "assets/north%20abc/2026-05-21-104653891.mp4",
+    "raw_path": "assets/north abc/2026-05-21-104653891.mp4",
+    "caption": "North ABC \u2022 2026 05 21 104653891",
+    "location": "North ABC \u2022 4,190m",
+    "size": "23.24 MB"
+  },
+  {
+    "type": "video",
+    "filename": "2026-05-21-162356753.mp4",
+    "path": "assets/north%20abc/2026-05-21-162356753.mp4",
+    "raw_path": "assets/north abc/2026-05-21-162356753.mp4",
+    "caption": "North ABC \u2022 2026 05 21 162356753",
+    "location": "North ABC \u2022 4,190m",
+    "size": "14.67 MB"
+  },
+  {
+    "type": "video",
+    "filename": "2026-05-22-121534375.mp4",
+    "path": "assets/north%20abc/2026-05-22-121534375.mp4",
+    "raw_path": "assets/north abc/2026-05-22-121534375.mp4",
+    "caption": "North ABC \u2022 2026 05 22 121534375",
+    "location": "North ABC \u2022 4,190m",
+    "size": "17.47 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_075808.jpg",
+    "path": "assets/north%20abc/20260405_075808.jpg",
+    "raw_path": "assets/north abc/20260405_075808.jpg",
+    "caption": "North ABC \u2022 20260405 075808",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.42 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_092804.mp4",
+    "path": "assets/north%20abc/20260405_092804.mp4",
+    "raw_path": "assets/north abc/20260405_092804.mp4",
+    "caption": "North ABC \u2022 20260405 092804",
+    "location": "North ABC \u2022 4,190m",
+    "size": "33.69 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_101126.jpg",
+    "path": "assets/north%20abc/20260405_101126.jpg",
+    "raw_path": "assets/north abc/20260405_101126.jpg",
+    "caption": "North ABC \u2022 20260405 101126",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.58 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_103737.mp4",
+    "path": "assets/north%20abc/20260405_103737.mp4",
+    "raw_path": "assets/north abc/20260405_103737.mp4",
+    "caption": "North ABC \u2022 20260405 103737",
+    "location": "North ABC \u2022 4,190m",
+    "size": "31.70 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_104317_1.mp4",
+    "path": "assets/north%20abc/20260405_104317_1.mp4",
+    "raw_path": "assets/north abc/20260405_104317_1.mp4",
+    "caption": "North ABC \u2022 20260405 104317 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "24.42 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_112531_004.jpg",
+    "path": "assets/north%20abc/20260405_112531_004.jpg",
+    "raw_path": "assets/north abc/20260405_112531_004.jpg",
+    "caption": "North ABC \u2022 20260405 112531 004",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.20 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_112545_002.jpg",
+    "path": "assets/north%20abc/20260405_112545_002.jpg",
+    "raw_path": "assets/north abc/20260405_112545_002.jpg",
+    "caption": "North ABC \u2022 20260405 112545 002",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.09 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_112558.jpeg",
+    "path": "assets/north%20abc/20260405_112558.jpeg",
+    "raw_path": "assets/north abc/20260405_112558.jpeg",
+    "caption": "North ABC \u2022 20260405 112558",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.39 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_112632.jpeg",
+    "path": "assets/north%20abc/20260405_112632.jpeg",
+    "raw_path": "assets/north abc/20260405_112632.jpeg",
+    "caption": "North ABC \u2022 20260405 112632",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.72 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_113039.jpeg",
+    "path": "assets/north%20abc/20260405_113039.jpeg",
+    "raw_path": "assets/north abc/20260405_113039.jpeg",
+    "caption": "North ABC \u2022 20260405 113039",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.20 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_121943.jpeg",
+    "path": "assets/north%20abc/20260405_121943.jpeg",
+    "raw_path": "assets/north abc/20260405_121943.jpeg",
+    "caption": "North ABC \u2022 20260405 121943",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.43 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_123138.mp4",
+    "path": "assets/north%20abc/20260405_123138.mp4",
+    "raw_path": "assets/north abc/20260405_123138.mp4",
+    "caption": "North ABC \u2022 20260405 123138",
+    "location": "North ABC \u2022 4,190m",
+    "size": "36.22 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_123604.mp4",
+    "path": "assets/north%20abc/20260405_123604.mp4",
+    "raw_path": "assets/north abc/20260405_123604.mp4",
+    "caption": "North ABC \u2022 20260405 123604",
+    "location": "North ABC \u2022 4,190m",
+    "size": "17.50 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260405_124209.mp4",
+    "path": "assets/north%20abc/20260405_124209.mp4",
+    "raw_path": "assets/north abc/20260405_124209.mp4",
+    "caption": "North ABC \u2022 20260405 124209",
+    "location": "North ABC \u2022 4,190m",
+    "size": "14.20 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_163839.jpg",
+    "path": "assets/north%20abc/20260405_163839.jpg",
+    "raw_path": "assets/north abc/20260405_163839.jpg",
+    "caption": "North ABC \u2022 20260405 163839",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.49 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260405_180738.jpg",
+    "path": "assets/north%20abc/20260405_180738.jpg",
+    "raw_path": "assets/north abc/20260405_180738.jpg",
+    "caption": "North ABC \u2022 20260405 180738",
+    "location": "North ABC \u2022 4,190m",
+    "size": "3.92 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260406_053424_1.mp4",
+    "path": "assets/north%20abc/20260406_053424_1.mp4",
+    "raw_path": "assets/north abc/20260406_053424_1.mp4",
+    "caption": "North ABC \u2022 20260406 053424 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "60.50 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260406_092039.jpg",
+    "path": "assets/north%20abc/20260406_092039.jpg",
+    "raw_path": "assets/north abc/20260406_092039.jpg",
+    "caption": "North ABC \u2022 20260406 092039",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.85 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260406_093749(1).jpeg",
+    "path": "assets/north%20abc/20260406_093749%281%29.jpeg",
+    "raw_path": "assets/north abc/20260406_093749(1).jpeg",
+    "caption": "North ABC \u2022 20260406 093749(1)",
+    "location": "North ABC \u2022 4,190m",
+    "size": "3.05 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260406_094018(1).jpeg",
+    "path": "assets/north%20abc/20260406_094018%281%29.jpeg",
+    "raw_path": "assets/north abc/20260406_094018(1).jpeg",
+    "caption": "North ABC \u2022 20260406 094018(1)",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.67 MB"
+  },
+  {
+    "type": "video",
+    "filename": "20260406_102051_1.mp4",
+    "path": "assets/north%20abc/20260406_102051_1.mp4",
+    "raw_path": "assets/north abc/20260406_102051_1.mp4",
+    "caption": "North ABC \u2022 20260406 102051 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.98 MB"
+  },
+  {
+    "type": "image",
+    "filename": "20260407_180442.jpeg",
+    "path": "assets/north%20abc/20260407_180442.jpeg",
+    "raw_path": "assets/north abc/20260407_180442.jpeg",
+    "caption": "North ABC \u2022 20260407 180442",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.03 MB"
+  },
+  {
+    "type": "video",
+    "filename": "71e6c8c4d49060d6750f9965cb058ca2.mp4",
+    "path": "assets/north%20abc/71e6c8c4d49060d6750f9965cb058ca2.mp4",
+    "raw_path": "assets/north abc/71e6c8c4d49060d6750f9965cb058ca2.mp4",
+    "caption": "North ABC \u2022 71e6c8c4d49060d6750f9965cb058ca2",
+    "location": "North ABC \u2022 4,190m",
+    "size": "18.97 MB"
+  },
+  {
+    "type": "image",
+    "filename": "G0032925.jpg",
+    "path": "assets/north%20abc/G0032925.jpg",
+    "raw_path": "assets/north abc/G0032925.jpg",
+    "caption": "North ABC \u2022 G0032925",
+    "location": "North ABC \u2022 4,190m",
+    "size": "3.15 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_4844.mp4",
+    "path": "assets/north%20abc/IMG_4844.mp4",
+    "raw_path": "assets/north abc/IMG_4844.mp4",
+    "caption": "North ABC \u2022 IMG 4844",
+    "location": "North ABC \u2022 4,190m",
+    "size": "22.71 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4851(1).jpg",
+    "path": "assets/north%20abc/IMG_4851%281%29.jpg",
+    "raw_path": "assets/north abc/IMG_4851(1).jpg",
+    "caption": "North ABC \u2022 IMG 4851(1)",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.55 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4855.jpg",
+    "path": "assets/north%20abc/IMG_4855.jpg",
+    "raw_path": "assets/north abc/IMG_4855.jpg",
+    "caption": "North ABC \u2022 IMG 4855",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.21 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4935.jpg",
+    "path": "assets/north%20abc/IMG_4935.jpg",
+    "raw_path": "assets/north abc/IMG_4935.jpg",
+    "caption": "North ABC \u2022 IMG 4935",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.90 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4936.jpg",
+    "path": "assets/north%20abc/IMG_4936.jpg",
+    "raw_path": "assets/north abc/IMG_4936.jpg",
+    "caption": "North ABC \u2022 IMG 4936",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.85 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4937.jpg",
+    "path": "assets/north%20abc/IMG_4937.jpg",
+    "raw_path": "assets/north abc/IMG_4937.jpg",
+    "caption": "North ABC \u2022 IMG 4937",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.93 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4954.jpg",
+    "path": "assets/north%20abc/IMG_4954.jpg",
+    "raw_path": "assets/north abc/IMG_4954.jpg",
+    "caption": "North ABC \u2022 IMG 4954",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.97 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4955.jpg",
+    "path": "assets/north%20abc/IMG_4955.jpg",
+    "raw_path": "assets/north abc/IMG_4955.jpg",
+    "caption": "North ABC \u2022 IMG 4955",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.03 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4982.jpg",
+    "path": "assets/north%20abc/IMG_4982.jpg",
+    "raw_path": "assets/north abc/IMG_4982.jpg",
+    "caption": "North ABC \u2022 IMG 4982",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.18 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4983.jpg",
+    "path": "assets/north%20abc/IMG_4983.jpg",
+    "raw_path": "assets/north abc/IMG_4983.jpg",
+    "caption": "North ABC \u2022 IMG 4983",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.89 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_4987.mp4",
+    "path": "assets/north%20abc/IMG_4987.mp4",
+    "raw_path": "assets/north abc/IMG_4987.mp4",
+    "caption": "North ABC \u2022 IMG 4987",
+    "location": "North ABC \u2022 4,190m",
+    "size": "8.62 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_4988.jpg",
+    "path": "assets/north%20abc/IMG_4988.jpg",
+    "raw_path": "assets/north abc/IMG_4988.jpg",
+    "caption": "North ABC \u2022 IMG 4988",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.05 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_4995_1.mp4",
+    "path": "assets/north%20abc/IMG_4995_1.mp4",
+    "raw_path": "assets/north abc/IMG_4995_1.mp4",
+    "caption": "North ABC \u2022 IMG 4995 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "13.41 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_4996_1.mp4",
+    "path": "assets/north%20abc/IMG_4996_1.mp4",
+    "raw_path": "assets/north abc/IMG_4996_1.mp4",
+    "caption": "North ABC \u2022 IMG 4996 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "8.75 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5010.jpg",
+    "path": "assets/north%20abc/IMG_5010.jpg",
+    "raw_path": "assets/north abc/IMG_5010.jpg",
+    "caption": "North ABC \u2022 IMG 5010",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.84 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_5060.mp4",
+    "path": "assets/north%20abc/IMG_5060.mp4",
+    "raw_path": "assets/north abc/IMG_5060.mp4",
+    "caption": "North ABC \u2022 IMG 5060",
+    "location": "North ABC \u2022 4,190m",
+    "size": "9.89 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_5116.mp4",
+    "path": "assets/north%20abc/IMG_5116.mp4",
+    "raw_path": "assets/north abc/IMG_5116.mp4",
+    "caption": "North ABC \u2022 IMG 5116",
+    "location": "North ABC \u2022 4,190m",
+    "size": "19.50 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5142.jpg",
+    "path": "assets/north%20abc/IMG_5142.jpg",
+    "raw_path": "assets/north abc/IMG_5142.jpg",
+    "caption": "North ABC \u2022 IMG 5142",
+    "location": "North ABC \u2022 4,190m",
+    "size": "1.68 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5147.jpg",
+    "path": "assets/north%20abc/IMG_5147.jpg",
+    "raw_path": "assets/north abc/IMG_5147.jpg",
+    "caption": "North ABC \u2022 IMG 5147",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.35 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5149.jpg",
+    "path": "assets/north%20abc/IMG_5149.jpg",
+    "raw_path": "assets/north abc/IMG_5149.jpg",
+    "caption": "North ABC \u2022 IMG 5149",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.29 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5150.jpg",
+    "path": "assets/north%20abc/IMG_5150.jpg",
+    "raw_path": "assets/north abc/IMG_5150.jpg",
+    "caption": "North ABC \u2022 IMG 5150",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.30 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5154.jpg",
+    "path": "assets/north%20abc/IMG_5154.jpg",
+    "raw_path": "assets/north abc/IMG_5154.jpg",
+    "caption": "North ABC \u2022 IMG 5154",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.16 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5187.jpg",
+    "path": "assets/north%20abc/IMG_5187.jpg",
+    "raw_path": "assets/north abc/IMG_5187.jpg",
+    "caption": "North ABC \u2022 IMG 5187",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.69 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5190.jpg",
+    "path": "assets/north%20abc/IMG_5190.jpg",
+    "raw_path": "assets/north abc/IMG_5190.jpg",
+    "caption": "North ABC \u2022 IMG 5190",
+    "location": "North ABC \u2022 4,190m",
+    "size": "5.40 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_5206.jpg",
+    "path": "assets/north%20abc/IMG_5206.jpg",
+    "raw_path": "assets/north abc/IMG_5206.jpg",
+    "caption": "North ABC \u2022 IMG 5206",
+    "location": "North ABC \u2022 4,190m",
+    "size": "4.25 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_5210_1.mp4",
+    "path": "assets/north%20abc/IMG_5210_1.mp4",
+    "raw_path": "assets/north abc/IMG_5210_1.mp4",
+    "caption": "North ABC \u2022 IMG 5210 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "14.74 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_8719.mp4",
+    "path": "assets/north%20abc/IMG_8719.mp4",
+    "raw_path": "assets/north abc/IMG_8719.mp4",
+    "caption": "North ABC \u2022 IMG 8719",
+    "location": "North ABC \u2022 4,190m",
+    "size": "6.46 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_8726.mp4",
+    "path": "assets/north%20abc/IMG_8726.mp4",
+    "raw_path": "assets/north abc/IMG_8726.mp4",
+    "caption": "North ABC \u2022 IMG 8726",
+    "location": "North ABC \u2022 4,190m",
+    "size": "11.79 MB"
+  },
+  {
+    "type": "image",
+    "filename": "IMG_8767.jpg",
+    "path": "assets/north%20abc/IMG_8767.jpg",
+    "raw_path": "assets/north abc/IMG_8767.jpg",
+    "caption": "North ABC \u2022 IMG 8767",
+    "location": "North ABC \u2022 4,190m",
+    "size": "2.82 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_8768_1.mp4",
+    "path": "assets/north%20abc/IMG_8768_1.mp4",
+    "raw_path": "assets/north abc/IMG_8768_1.mp4",
+    "caption": "North ABC \u2022 IMG 8768 1",
+    "location": "North ABC \u2022 4,190m",
+    "size": "14.67 MB"
+  },
+  {
+    "type": "video",
+    "filename": "IMG_8777.mp4",
+    "path": "assets/north%20abc/IMG_8777.mp4",
+    "raw_path": "assets/north abc/IMG_8777.mp4",
+    "caption": "North ABC \u2022 IMG 8777",
+    "location": "North ABC \u2022 4,190m",
+    "size": "7.91 MB"
+  },
+  {
+    "type": "image",
+    "filename": "Snapchat-1903446451.jpg",
+    "path": "assets/north%20abc/Snapchat-1903446451.jpg",
+    "raw_path": "assets/north abc/Snapchat-1903446451.jpg",
+    "caption": "North ABC \u2022 Snapchat 1903446451",
+    "location": "North ABC \u2022 4,190m",
+    "size": "0.99 MB"
+  }
+]

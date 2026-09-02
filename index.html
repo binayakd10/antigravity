@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binayak Dhakal | Cybersecurity Analyst & Student</title>
+  <meta name="description" content="Official portfolio of Binayak Dhakal — Cybersecurity student at Herald College, specializing in network defense, digital forensics, system security, and vulnerability assessment.">
+  <meta name="keywords" content="Binayak Dhakal, Cybersecurity, Herald College, Butwal, Nepal, Portfolio, Network Defense, Digital Forensics, Ethical Hacking, Kali Linux, Python">
+  <meta name="author" content="Binayak Dhakal">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Binayak Dhakal | Cybersecurity Portfolio">
+  <meta property="og:description" content="Cybersecurity Student | Aspiring Cybersecurity Analyst based in Nepal. Explore academic journey, security labs, and technical toolkit.">
+  <meta property="og:image" content="assets/binayak_annapurna.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L85 25 V50 C85 70 50 90 50 90 C50 90 15 70 15 50 V25 Z' fill='%230f2744' stroke='%23c5a059' stroke-width='4'/%3E%3Ctext x='50' y='58' font-family='sans-serif' font-size='28' font-weight='bold' fill='%23c5a059' text-anchor='middle'%3EBD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Subtle Circuit & Scanline Background Grid -->
+  <div class="circuit-bg-overlay" aria-hidden="true"></div>
+  <div class="subtle-scanline" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-content">
+      <span class="toast-title" id="toast-title">Notification</span>
+      <span class="toast-message" id="toast-message">Action completed successfully.</span>
+    </div>
+  </div>
+
+  <!-- Fixed Top Navigation -->
+  <header class="site-header" id="navbar">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <!-- Monogram Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Binayak Dhakal Home">
+        <div class="shield-badge">
+          <svg viewBox="0 0 40 46" class="shield-svg">
+            <path d="M20 2 L36 9 V22 C36 33 20 42 20 42 C20 42 4 33 4 22 V9 Z" class="shield-path"/>
+          </svg>
+          <span class="monogram-text">BD</span>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">BINAYAK DHAKAL</span>
+          <span class="brand-sub">CYBERSECURITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-item active"><span class="nav-index">01.</span> Home</a></li>
+        <li><a href="#about" class="nav-item"><span class="nav-index">02.</span> About</a></li>
+        <li><a href="#education" class="nav-item"><span class="nav-index">03.</span> Education</a></li>
+        <li><a href="#skills" class="nav-item"><span class="nav-index">04.</span> Skills</a></li>
+        <li><a href="#projects" class="nav-item"><span class="nav-index">05.</span> Projects</a></li>
+        <li><a href="#certifications" class="nav-item"><span class="nav-index">06.</span> Certifications</a></li>
+        <li><a href="#hobbies" class="nav-item"><span class="nav-index">07.</span> Hobbies</a></li>
+        <li><a href="#contact" class="nav-item"><span class="nav-index">08.</span> Contact</a></li>
+      </ul>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Live Security Protocol Badge -->
+        <div class="security-status-badge" title="System Security Active">
+          <span class="status-dot"></span>
+          <span class="status-text">SECURE</span>
+        </div>
+
+        <a href="#cv-section" class="btn btn-nav-cv" id="nav-cv-btn">
+          <i class="fa-solid fa-file-shield"></i>
+          <span>CV / Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="drawer-logo-badge">BD</span>
+        <span>Binayak Dhakal</span>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="#hero" class="drawer-link"><span class="link-num">01</span> Home</a></li>
+      <li><a href="#about" class="drawer-link"><span class="link-num">02</span> About Bio</a></li>
+      <li><a href="#education" class="drawer-link"><span class="link-num">03</span> Academic Journey</a></li>
+      <li><a href="#skills" class="drawer-link"><span class="link-num">04</span> Skills & Tools</a></li>
+      <li><a href="#projects" class="drawer-link"><span class="link-num">05</span> Security Labs</a></li>
+      <li><a href="#certifications" class="drawer-link"><span class="link-num">06</span> Certifications</a></li>
+      <li><a href="#hobbies" class="drawer-link"><span class="link-num">07</span> My Hobbies</a></li>
+      <li><a href="#contact" class="drawer-link"><span class="link-num">08</span> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="https://www.linkedin.com/in/binayak-dhakal-94878131a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/binayakd10/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:binayakdhakal8@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="drawer-location"><i class="fa-solid fa-location-dot"></i> Butwal, Nepal</p>
+    </div>
+  </aside>
+
+  <!-- Side Floating Dot Navigation (Inspired by Reference) -->
+  <nav class="side-dot-nav" aria-label="Section shortcuts" id="side-dot-nav">
+    <a href="#hero" class="side-dot active" data-section="hero" title="Home"><span class="dot-tooltip">Home</span></a>
+    <a href="#about" class="side-dot" data-section="about" title="About"><span class="dot-tooltip">About</span></a>
+    <a href="#education" class="side-dot" data-section="education" title="Education"><span class="dot-tooltip">Education</span></a>
+    <a href="#skills" class="side-dot" data-section="skills" title="Skills"><span class="dot-tooltip">Skills</span></a>
+    <a href="#projects" class="side-dot" data-section="projects" title="Projects"><span class="dot-tooltip">Projects</span></a>
+    <a href="#certifications" class="side-dot" data-section="certifications" title="Certifications"><span class="dot-tooltip">Certifications</span></a>
+    <a href="#hobbies" class="side-dot" data-section="hobbies" title="Hobbies"><span class="dot-tooltip">Hobbies</span></a>
+    <a href="#contact" class="side-dot" data-section="contact" title="Contact"><span class="dot-tooltip">Contact</span></a>
+  </nav>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section section-reveal">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content Column -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="terminal-prefix">&gt;</span>
+            <span class="eyebrow-text">INITIALIZING SECURITY PROFILE // v2.6</span>
+            <span class="live-pulse"></span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-name-part first-name">BINAYAK</span>
+            <span class="hero-name-part last-name">DHAKAL</span>
+          </h1>
+
+          <!-- Typewriter Tagline -->
+          <div class="hero-tagline-wrapper">
+            <div class="tagline-terminal">
+              <span class="terminal-prompt">$ role --active</span>
+              <span class="typewriter-text" id="typewriter-output"></span>
+              <span class="cursor-blink">|</span>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            Cybersecurity student at <strong>Herald College</strong> with a passion for digital forensics, network defense, and vulnerability discovery. Bridging rigorous defensive principles with hands-on lab investigation.
+          </p>
+
+          <!-- Quick Metrics / Chips -->
+          <div class="hero-chips">
+            <div class="hero-chip">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>BSc (Hons) Cybersecurity</span>
+            </div>
+            <div class="hero-chip">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Defensive & Forensics</span>
+            </div>
+            <div class="hero-chip">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Butwal / Kathmandu, Nepal</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-royal">
+              <span>Explore Security Labs</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Initiate Contact</span>
+            </a>
+            <button class="btn btn-gold-ghost" id="hero-cv-btn" title="Download Curriculum Vitae">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links Bar -->
+          <div class="hero-social-bar">
+            <span class="social-label">SECURE CHANNELS:</span>
+            <div class="social-links-list">
+              <a href="https://www.linkedin.com/in/binayak-dhakal-94878131a/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/binayakd10/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram Profile">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="mailto:binayakdhakal8@gmail.com" class="social-btn" title="Direct Email">
+                <i class="fa-solid fa-at"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Column: Preserved Annapurna Base Camp Photo Card -->
+        <div class="hero-visual">
+          <div class="royal-photo-frame" id="photo-frame">
+            <!-- Royal Border Corners -->
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+
+            <!-- Altitude / Location Badge -->
+            <div class="photo-meta-badge">
+              <div class="meta-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+              <div class="meta-details">
+                <span class="meta-title">ANNAPURNA FIRST BASE CAMP</span>
+                <span class="meta-sub">4,130m / 13,550ft • Nepal Himalayas</span>
+              </div>
+            </div>
+
+            <!-- The Preserved Original Photo -->
+            <div class="photo-wrapper">
+              <img 
+                src="assets/binayak_annapurna.jpg" 
+                alt="Binayak Dhakal at Annapurna First Base Camp (4,130m) with Himalayan peaks and Namaste sign" 
+                class="hero-photo"
+                id="hero-img"
+              />
+              <div class="photo-overlay-tint"></div>
+              <div class="photo-scan-beam"></div>
+            </div>
+
+            <!-- Bottom Caption Ribbon -->
+            <div class="photo-bottom-ribbon">
+              <div class="ribbon-content">
+                <i class="fa-solid fa-compass"></i>
+                <span class="ribbon-text">28°31'48" N, 83°52'41" E • Resilient by Nature</span>
+              </div>
+              <div class="security-chip">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>VERIFIED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="mouse-scroll">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">DISCOVER MORE</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section section-reveal">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 02</span>
+          </div>
+          <h2 class="section-title">Professional Background</h2>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-shield-halved divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="about-bio-card royal-card">
+            <div class="card-header-accent">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="header-badge"><i class="fa-solid fa-fingerprint"></i> BIOGRAPHY & PHILOSOPHY</span>
+            </div>
+
+            <div class="bio-content">
+              <blockquote class="bio-quote">
+                "Approaching security with curiosity and discipline — combining technical rigor with a genuine interest in how systems fail and how to defend them."
+              </blockquote>
+
+              <p class="bio-paragraph highlight-paragraph">
+                <strong>Binayak Dhakal</strong> is a cybersecurity student based in <strong>Butwal, Nepal</strong>, currently pursuing a <strong>BSc (Hons) in Cybersecurity at Herald College</strong>. With a strong foundation in networking, digital forensics, and secure systems, he is building practical, hands-on skills through self-directed labs and coursework, with the goal of becoming a proficient <strong>Cybersecurity Analyst</strong>.
+              </p>
+
+              <p class="bio-paragraph">
+                He approaches security with curiosity and discipline — combining technical rigor with a genuine interest in how systems fail and how to defend them. Outside of coursework, he also follows <strong>stock market analysis and investing</strong> as a secondary interest, developing risk-assessment frameworks that complement his strategic security mindset.
+              </p>
+
+              <!-- Philosophy / Attributes Row -->
+              <div class="attributes-grid">
+                <div class="attribute-item">
+                  <div class="attr-icon"><i class="fa-solid fa-microscope"></i></div>
+                  <div class="attr-text">
+                    <span class="attr-title">Analytical Mindset</span>
+                    <span class="attr-desc">Dissecting attack vectors & log traces</span>
+                  </div>
+                </div>
+
+                <div class="attribute-item">
+                  <div class="attr-icon"><i class="fa-solid fa-network-wired"></i></div>
+                  <div class="attr-text">
+                    <span class="attr-title">Network Defense</span>
+                    <span class="attr-desc">Securing protocols & subnet perimeters</span>
+                  </div>
+                </div>
+
+                <div class="attribute-item">
+                  <div class="attr-icon"><i class="fa-solid fa-lock"></i></div>
+                  <div class="attr-text">
+                    <span class="attr-title">System Rigor</span>
+                    <span class="attr-desc">Hardening endpoints & access policies</span>
+                  </div>
+                </div>
+
+                <div class="attribute-item">
+                  <div class="attr-icon"><i class="fa-solid fa-chart-line"></i></div>
+                  <div class="attr-text">
+                    <span class="attr-title">Market Analysis</span>
+                    <span class="attr-desc">Strategic risk modeling & valuation</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Quick Dossier / Security Competencies -->
+          <div class="about-dossier-column">
+            <!-- Identity Specs Card -->
+            <div class="dossier-card royal-card">
+              <h3 class="card-mini-title">
+                <i class="fa-solid fa-id-card-clip"></i>
+                <span>ANALYST PROFILE SNAPSHOT</span>
+              </h3>
+
+              <ul class="dossier-specs-list">
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-user"></i> Full Name</span>
+                  <span class="spec-value">Binayak Dhakal</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-building-columns"></i> Institution</span>
+                  <span class="spec-value">Herald College</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-certificate"></i> Degree Track</span>
+                  <span class="spec-value">BSc (Hons) Cybersecurity</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-bullseye"></i> Career Goal</span>
+                  <span class="spec-value highlight-gold">Cybersecurity Analyst</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-map-pin"></i> Base Location</span>
+                  <span class="spec-value">Butwal / Kathmandu, Nepal</span>
+                </li>
+                <li class="spec-row">
+                  <span class="spec-label"><i class="fa-solid fa-chart-pie"></i> Secondary Interest</span>
+                  <span class="spec-value">Stock Market & Equity Analysis</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Security Core Domains -->
+            <div class="domains-card royal-card">
+              <h3 class="card-mini-title">
+                <i class="fa-solid fa-shield-virus"></i>
+                <span>CORE DEFENSIVE DOMAINS</span>
+              </h3>
+
+              <div class="domain-pills">
+                <div class="domain-pill">
+                  <span class="pill-badge">01</span>
+                  <span>Vulnerability Assessment</span>
+                </div>
+                <div class="domain-pill">
+                  <span class="pill-badge">02</span>
+                  <span>Network Traffic Inspection</span>
+                </div>
+                <div class="domain-pill">
+                  <span class="pill-badge">03</span>
+                  <span>Digital Forensics Basics</span>
+                </div>
+                <div class="domain-pill">
+                  <span class="pill-badge">04</span>
+                  <span>Linux Administration</span>
+                </div>
+                <div class="domain-pill">
+                  <span class="pill-badge">05</span>
+                  <span>Scripting & Automation</span>
+                </div>
+                <div class="domain-pill">
+                  <span class="pill-badge">06</span>
+                  <span>Security Hardening</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. ACADEMIC JOURNEY (TIMELINE) ==================== -->
+    <section id="education" class="section education-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 03</span>
+          </div>
+          <h2 class="section-title">Academic Journey</h2>
+          <p class="section-subtitle">A chronological record of formal education, academic excellence, and technical foundations.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-graduation-cap divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Royal Timeline Layout -->
+        <div class="timeline-container">
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1: Herald College (BSc Hons) -->
+          <div class="timeline-item timeline-active-current">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="timeline-card royal-card">
+              <div class="timeline-card-header">
+                <div class="timeline-date-badge current-badge">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>2026 – 2029 (Ongoing)</span>
+                </div>
+                <div class="timeline-status-tag">
+                  <span class="pulse-ring"></span>
+                  <span>CURRENT ENROLLMENT</span>
+                </div>
+              </div>
+
+              <h3 class="timeline-degree">BSc (Hons) Cybersecurity</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Herald College</span>
+              </h4>
+
+              <p class="timeline-desc">
+                Enrolled in an intensive British-accredited undergraduate program covering core aspects of network security, digital forensics, defensive architecture, secure systems programming, threat analysis, and ethical hacking methodologies.
+              </p>
+
+              <div class="timeline-highlights">
+                <span class="hl-tag"><i class="fa-solid fa-check"></i> Digital Forensics</span>
+                <span class="hl-tag"><i class="fa-solid fa-check"></i> Secure Systems</span>
+                <span class="hl-tag"><i class="fa-solid fa-check"></i> Computer Networks</span>
+                <span class="hl-tag"><i class="fa-solid fa-check"></i> Security Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Paramount College (+2 Science) -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+            <div class="timeline-card royal-card">
+              <div class="timeline-card-header">
+                <div class="timeline-date-badge">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>2023 – 2025</span>
+                </div>
+                <div class="timeline-gpa-badge">
+                  <span class="gpa-label">GPA</span>
+                  <span class="gpa-score">3.46</span>
+                </div>
+              </div>
+
+              <h3 class="timeline-degree">Higher Secondary Education (+2 Science)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Paramount College • Butwal, Nepal</span>
+              </h4>
+
+              <p class="timeline-desc">
+                Completed rigorous foundational science coursework with strong analytical and quantitative training in <strong>Physics, Chemistry, Mathematics, and Computer Science</strong>. Built early algorithmic thinking and programming concepts.
+              </p>
+
+              <div class="timeline-highlights">
+                <span class="hl-tag">Computer Science</span>
+                <span class="hl-tag">Advanced Mathematics</span>
+                <span class="hl-tag">Physics</span>
+                <span class="hl-tag">Analytical Chemistry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Paramount Boarding High School (SEE) -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card royal-card">
+              <div class="timeline-card-header">
+                <div class="timeline-date-badge">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>2020</span>
+                </div>
+                <div class="timeline-gpa-badge high-score">
+                  <span class="gpa-label">GPA</span>
+                  <span class="gpa-score">3.65</span>
+                </div>
+              </div>
+
+              <h3 class="timeline-degree">Secondary Education Examination (SEE)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school-flag"></i>
+                <span>Paramount Boarding High School • Butwal, Nepal</span>
+              </h4>
+
+              <p class="timeline-desc">
+                Graduated secondary school with high honors (GPA 3.65), establishing a distinguished track record of discipline, curiosity in computational sciences, and academic leadership.
+              </p>
+
+              <div class="timeline-highlights">
+                <span class="hl-tag">High Distinction (3.65 GPA)</span>
+                <span class="hl-tag">Mathematics & Logic</span>
+                <span class="hl-tag">Science Foundations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. SKILLS & TOOLS SECTION ==================== -->
+    <section id="skills" class="section skills-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 04</span>
+          </div>
+          <h2 class="section-title">Technical Toolkit & Arsenal</h2>
+          <p class="section-subtitle">Current core competencies and an extensible grid structured for upcoming security tools and frameworks.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-terminal divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Skills Grid (Active + Modular Placeholder Slots) -->
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1: Python (Active) -->
+          <div class="skill-card active-skill royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper python-glow">
+                <!-- Python Custom SVG -->
+                <svg viewBox="0 0 128 128" class="tool-svg">
+                  <path fill="#387eb8" d="M63.7 7.7c-29.2 0-27.4 12.7-27.4 12.7l.1 13.1h27.9v3.9H25.4S7.7 35.4 7.7 64.6c0 29.2 15.5 28.2 15.5 28.2h9.2v-13s-.5-15.5 15.2-15.5h27.7s14.6.2 14.6-14.2V22.2s2.2-14.5-26.2-14.5zm-15 8.7c2.6 0 4.7 2.1 4.7 4.7 0 2.6-2.1 4.7-4.7 4.7s-4.7-2.1-4.7-4.7c0-2.6 2.1-4.7 4.7-4.7z"/>
+                  <path fill="#ffe052" d="M64.3 120.3c29.2 0 27.4-12.7 27.4-12.7l-.1-13.1H63.7v-3.9h38.9s17.7 2 17.7-27.2c0-29.2-15.5-28.2-15.5-28.2h-9.2v13s.5 15.5-15.2 15.5H57.7s-14.6-.2-14.6 14.2v27.9s-2.2 14.5 26.2 14.5zm15-8.7c-2.6 0-4.7-2.1-4.7-4.7 0-2.6 2.1-4.7 4.7-4.7s4.7 2.1 4.7 4.7c0 2.6-2.1 4.7-4.7 4.7z"/>
+                </svg>
+              </div>
+              <div class="skill-status-tag active-tag">
+                <span class="dot-active"></span>
+                <span>PROFICIENT</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name">Python</h3>
+              <p class="skill-category">Scripting & Security Automation</p>
+              <p class="skill-detail">
+                Network socket programming, automated log parsing, custom port scanners, and vulnerability probing scripts.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag">Automation</span>
+              <span class="tool-tag">Socket API</span>
+              <span class="tool-tag">Scapy</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Kali Linux (Active) -->
+          <div class="skill-card active-skill royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper kali-glow">
+                <!-- Kali Linux Dragon SVG -->
+                <svg viewBox="0 0 512 512" class="tool-svg">
+                  <path fill="#0057b7" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm138.8 190.2c-7.9 15.9-20.7 28.5-36.2 36.3-15.5 7.8-33.2 9.8-49.8 5.7-16.6-4.1-31.4-14.2-41.5-28.5-10.1-14.3-14.4-31.8-12-49.1 2.4-17.3 11.4-32.8 25.4-43.7 14-10.9 31.4-16.2 49-14.8 17.6 1.4 34 9.4 46.2 22.5 12.2 13.1 18.9 30.3 18.9 48.2v23.4zm-143.5 187c-17.3 8.7-37.1 10.9-55.8 6.4-18.7-4.5-35.3-15.9-46.7-32-11.4-16.1-16.2-35.8-13.5-55.3 2.7-19.5 12.8-36.9 28.6-49.2 15.8-12.3 35.3-18.2 55.1-16.7 19.8 1.5 38.3 10.6 52 25.3 13.7 14.7 21.2 34.1 21.2 54.2 0 11.4-2.5 22.6-7.4 32.8-4.9 10.2-12.1 19-21 25.8l-12.5 8.7z"/>
+                  <path fill="#557c93" d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm-15.4 309.8c-24.5 6.8-51.1 0.4-70.3-16.9-19.2-17.3-27.4-43.8-21.7-68.4 5.7-24.6 23.9-44.5 47.9-52.5 24-8 50.4-3 69.6 13.3 19.2 16.3 28.5 41.8 24.3 66.8-4.2 25-21.3 46.1-45 54.7l-4.8 3z"/>
+                </svg>
+              </div>
+              <div class="skill-status-tag active-tag">
+                <span class="dot-active"></span>
+                <span>ACTIVE OS</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name">Kali Linux</h3>
+              <p class="skill-category">Offensive & Defensive Security OS</p>
+              <p class="skill-detail">
+                Primary lab environment: CLI mastery, shell scripting, network interface configuring, packet auditing, and security package management.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag">Linux CLI</span>
+              <span class="tool-tag">Bash</span>
+              <span class="tool-tag">Kernel & SysAdmin</span>
+            </div>
+          </div>
+
+          <!-- Empty Skill Slot 1 -->
+          <div class="skill-card empty-skill-slot royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper empty-slot-icon">
+                <i class="fa-solid fa-plus fa-2x"></i>
+              </div>
+              <div class="skill-status-tag empty-slot-tag">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name empty-title">+ Add Skill</h3>
+              <p class="skill-category empty-category">Upcoming Tool / Technology</p>
+              <p class="skill-detail empty-detail">
+                Reserved slot ready for new security tools, protocols, or frameworks once mastered.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag empty-tag">+ Slot Open</span>
+              <span class="tool-tag empty-tag">Ready to Add</span>
+            </div>
+          </div>
+
+          <!-- Empty Skill Slot 2 -->
+          <div class="skill-card empty-skill-slot royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper empty-slot-icon">
+                <i class="fa-solid fa-plus fa-2x"></i>
+              </div>
+              <div class="skill-status-tag empty-slot-tag">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name empty-title">+ Add Skill</h3>
+              <p class="skill-category empty-category">Upcoming Tool / Technology</p>
+              <p class="skill-detail empty-detail">
+                Reserved slot ready for new security tools, protocols, or frameworks once mastered.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag empty-tag">+ Slot Open</span>
+              <span class="tool-tag empty-tag">Ready to Add</span>
+            </div>
+          </div>
+
+          <!-- Empty Skill Slot 3 -->
+          <div class="skill-card empty-skill-slot royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper empty-slot-icon">
+                <i class="fa-solid fa-plus fa-2x"></i>
+              </div>
+              <div class="skill-status-tag empty-slot-tag">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name empty-title">+ Add Skill</h3>
+              <p class="skill-category empty-category">Upcoming Tool / Technology</p>
+              <p class="skill-detail empty-detail">
+                Reserved slot ready for new security tools, protocols, or frameworks once mastered.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag empty-tag">+ Slot Open</span>
+              <span class="tool-tag empty-tag">Ready to Add</span>
+            </div>
+          </div>
+
+          <!-- Empty Skill Slot 4 -->
+          <div class="skill-card empty-skill-slot royal-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper empty-slot-icon">
+                <i class="fa-solid fa-plus fa-2x"></i>
+              </div>
+              <div class="skill-status-tag empty-slot-tag">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h3 class="skill-name empty-title">+ Add Skill</h3>
+              <p class="skill-category empty-category">Upcoming Tool / Technology</p>
+              <p class="skill-detail empty-detail">
+                Reserved slot ready for new security tools, protocols, or frameworks once mastered.
+              </p>
+            </div>
+            <div class="skill-card-footer">
+              <span class="tool-tag empty-tag">+ Slot Open</span>
+              <span class="tool-tag empty-tag">Ready to Add</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Add Skills Notice Box -->
+        <div class="skills-extensible-banner royal-card">
+          <div class="banner-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="banner-text">
+            <h4>Modular Skills Architecture</h4>
+            <p>This skills matrix is structured with extensible slots. As new cybersecurity tools, SIEM solutions, and network inspection proficiencies are developed, they drop directly into these spaces.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 05</span>
+          </div>
+          <h2 class="section-title">Security Labs & Projects</h2>
+          <p class="section-subtitle">Practical applications of defensive cybersecurity, vulnerability discovery, and remediation methodologies.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-laptop-code divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Featured Project 1: Home Network Vulnerability Assessment -->
+          <article class="project-card featured-project royal-card">
+            <!-- Project Badge / Type -->
+            <div class="project-top-bar">
+              <div class="project-flag">
+                <i class="fa-solid fa-star"></i>
+                <span>FEATURED SHOWCASE LAB</span>
+              </div>
+              <div class="project-category-tag">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Network Audit</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Home Network Vulnerability Assessment</h3>
+              <p class="project-subtitle">Complete Penetration Probe & Remediation Architecture for SOHO Perimeters</p>
+
+              <p class="project-summary">
+                A hands-on self-directed lab project designed to systematically audit a home network environment. Conducted multi-stage host discovery, port scanning, and service version enumeration to detect unpatched IoT devices, exposed administrative interfaces, and insecure legacy protocols, delivering documented remediation benchmarks.
+              </p>
+
+              <!-- Methodology Steps -->
+              <div class="methodology-steps">
+                <div class="step-card">
+                  <span class="step-num">01</span>
+                  <span class="step-name">Reconnaissance & ARP Sweep</span>
+                </div>
+                <div class="step-card">
+                  <span class="step-num">02</span>
+                  <span class="step-name">Nmap TCP/UDP SYN Scans</span>
+                </div>
+                <div class="step-card">
+                  <span class="step-num">03</span>
+                  <span class="step-name">Vulnerability Fingerprinting</span>
+                </div>
+                <div class="step-card">
+                  <span class="step-num">04</span>
+                  <span class="step-name">Remediation & Hardening</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tech-stack">
+                <span class="tech-badge"><i class="fa-solid fa-radar"></i> Nmap</span>
+                <span class="tech-badge"><i class="fa-brands fa-linux"></i> Kali Linux</span>
+                <span class="tech-badge"><i class="fa-solid fa-shield-virus"></i> Router Hardening</span>
+                <span class="tech-badge"><i class="fa-solid fa-file-lines"></i> Risk Scoring</span>
+                <span class="tech-badge"><i class="fa-solid fa-wifi"></i> WPA3 Auditing</span>
+              </div>
+            </div>
+
+            <!-- Project Actions -->
+            <div class="project-footer">
+              <button class="btn btn-royal btn-sm" id="open-project-modal-btn">
+                <i class="fa-solid fa-file-waveform"></i>
+                <span>View Lab Report & Methodology</span>
+              </button>
+              <div class="project-status-note">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lab Completed & Documented</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Future Project Slot 1: Digital Forensics PCAP & Memory Triage -->
+          <article class="project-card placeholder-project royal-card">
+            <div class="project-top-bar">
+              <div class="project-flag placeholder-flag">
+                <i class="fa-solid fa-clock"></i>
+                <span>UPCOMING LAB SHOWCASE</span>
+              </div>
+              <div class="project-category-tag">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Digital Forensics</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Packet Capture Analysis & Threat Hunting</h3>
+              <p class="project-subtitle">Wireshark & Snort Network Anomaly Investigation</p>
+
+              <p class="project-summary">
+                An upcoming coursework and lab project focusing on isolating malicious beaconing, DNS exfiltration anomalies, and brute-force patterns from PCAP network logs.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge future-badge">Wireshark</span>
+                <span class="tech-badge future-badge">Snort IDS</span>
+                <span class="tech-badge future-badge">PCAP Traces</span>
+                <span class="tech-badge future-badge">Python Scapy</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <span class="btn btn-outline btn-sm btn-disabled" title="Lab currently in development">
+                <i class="fa-solid fa-lock"></i>
+                <span>Lab In Progress</span>
+              </span>
+              <div class="project-status-note">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <span>Target: 2026/2027</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Project Deep-Dive Modal (Home Network Lab Details) -->
+    <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-lab-title">
+      <div class="modal-container royal-card">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span class="modal-badge"><i class="fa-solid fa-shield-halved"></i> LAB DOCUMENTATION</span>
+            <h3 id="modal-lab-title" class="modal-heading">Home Network Vulnerability Assessment</h3>
+          </div>
+          <button class="modal-close-btn" id="close-project-modal-btn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4 class="modal-subheading"><i class="fa-solid fa-bullseye"></i> Objective</h4>
+            <p>Establish a comprehensive defensive audit of an active Small Office/Home Office (SOHO) network to identify open service vectors, weak credentials, and legacy configurations before potential adversaries can exploit them.</p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-subheading"><i class="fa-solid fa-list-check"></i> Step-by-Step Methodology</h4>
+            <ul class="modal-list">
+              <li><strong>Subnet Mapping:</strong> Executed ARP broadcast sweeps across the <code>192.168.1.0/24</code> subnet to identify all connected nodes (workstations, mobile devices, router, smart TVs).</li>
+              <li><strong>Stealth SYN Scanning:</strong> Used <code>nmap -sS -sV -O -p- 192.168.1.1</code> to detect open ports without establishing full TCP handshakes.</li>
+              <li><strong>Vulnerability Script Auditing:</strong> Ran custom NSE scripts (<code>--script vuln,default</code>) to cross-reference exposed daemon banners with known CVE databases.</li>
+              <li><strong>Remediation Implementation:</strong> Disabled unencrypted Telnet/HTTP management interfaces, migrated router admin access to HTTPS, segmented IoT devices onto a guest VLAN, and updated router firmware.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-subheading"><i class="fa-solid fa-clipboard-check"></i> Key Remediation Findings</h4>
+            <div class="findings-grid">
+              <div class="finding-item finding-warning">
+                <span class="finding-label">FINDING 1</span>
+                <p>UPnP (Universal Plug and Play) was enabled by default on the gateway, allowing unverified port mapping.</p>
+                <span class="remediation-tag">Action: Disabled UPnP globally</span>
+              </div>
+              <div class="finding-item finding-success">
+                <span class="finding-label">FINDING 2</span>
+                <p>WPA2-PSK weak pre-shared key susceptible to offline dictionary cracking.</p>
+                <span class="remediation-tag">Action: Upgraded to 24-char entropy key + WPA3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-royal btn-sm" id="close-modal-footer-btn">
+            <span>Close Documentation</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Lightbox Modal Component -->
+    <div class="cert-modal-overlay" id="cert-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate Preview">
+      <div class="cert-modal-dialog royal-card">
+        <div class="cert-modal-top">
+          <div class="cert-modal-brand">
+            <div class="shield-badge mini-shield">
+              <span class="monogram-text">BD</span>
+            </div>
+            <div>
+              <h3 class="cert-modal-title">Verified Credential Document</h3>
+              <p class="cert-modal-sub">Microsoft • Simplilearn SkillUp | Code: 10467436</p>
+            </div>
+          </div>
+          <div class="cert-modal-actions">
+            <a href="assets/prompt_engineering_certification.pdf" download="Binayak_Dhakal_Prompt_Engineering_Certificate.pdf" class="btn btn-gold btn-sm" title="Download Official PDF">
+              <i class="fa-solid fa-download"></i>
+              <span>Download PDF</span>
+            </a>
+            <button class="cert-modal-close" id="close-cert-modal-btn" aria-label="Close certificate preview">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-modal-body">
+          <div class="cert-full-image-wrap">
+            <img src="assets/prompt_engineering_certification.png" alt="Official Declaration of Completion: Introduction to Prompt Engineering with GitHub Copilot - Binayak Dhakal">
+          </div>
+        </div>
+
+        <div class="cert-modal-footer">
+          <div class="cert-verification-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Authentic Verification • Issued to Binayak Dhakal • 14th July 2026</span>
+          </div>
+          <a href="assets/prompt_engineering_certification.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-royal btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>Open in New Tab</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 6. CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="section cert-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 06</span>
+          </div>
+          <h2 class="section-title">Certifications & Roadmap</h2>
+          <p class="section-subtitle">Targeted professional security credentials, industry certifications, and learning pathways.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-award divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Verified Certification: Introduction to Prompt Engineering with GitHub Copilot -->
+          <div class="cert-card earned-cert royal-card">
+            <div class="cert-header">
+              <div class="cert-icon-box ms-cert-icon">
+                <!-- Microsoft 4-square Icon -->
+                <svg viewBox="0 0 23 23" width="22" height="22" class="ms-svg-icon">
+                  <path fill="#f35325" d="M1 1h10v10H1z"/>
+                  <path fill="#81bc06" d="M12 1h10v10H12z"/>
+                  <path fill="#05a6f0" d="M1 12h10v10H1z"/>
+                  <path fill="#ffba08" d="M12 12h10v10H12z"/>
+                </svg>
+              </div>
+              <div class="cert-status-badge verified">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>VERIFIED COMPLETION</span>
+              </div>
+            </div>
+
+            <!-- Certificate Thumbnail with Click to Preview -->
+            <div class="cert-thumbnail-box" id="cert-thumb-trigger" title="Click to view full certificate">
+              <img src="assets/prompt_engineering_certification.png" alt="Declaration of Completion - Introduction to Prompt Engineering with GitHub Copilot - Binayak Dhakal">
+              <div class="cert-thumb-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Full Certificate</span>
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <div class="cert-issuer-badge">
+                <span>MICROSOFT</span>
+                <span class="issuer-sep">•</span>
+                <span>SIMPLILEARN SKILLUP</span>
+              </div>
+              
+              <h3 class="cert-name">
+                <a href="assets/prompt_engineering_certification.pdf" target="_blank" rel="noopener noreferrer" class="cert-title-link" title="Open official certificate document">
+                  Introduction to Prompt Engineering with GitHub Copilot
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </h3>
+              
+              <p class="cert-desc">
+                Authorized declaration of completion recognizing professional proficiency in generative AI prompt engineering, context injection, zero/few-shot techniques, and secure AI-assisted software workflows with GitHub Copilot.
+              </p>
+
+              <!-- Credential Metadata Details -->
+              <div class="cert-meta-grid">
+                <div class="cert-meta-item">
+                  <span class="meta-label"><i class="fa-regular fa-calendar"></i> ISSUE DATE</span>
+                  <span class="meta-val">14th July 2026</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="meta-label"><i class="fa-solid fa-barcode"></i> CERTIFICATE CODE</span>
+                  <span class="meta-val">10467436</span>
+                </div>
+              </div>
+
+              <!-- Hyperlink / Verification Action Buttons -->
+              <div class="cert-actions-row">
+                <a href="assets/prompt_engineering_certification.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-primary">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <span>Official Certificate (PDF)</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button type="button" class="btn-cert-secondary" id="btn-open-cert-modal">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Interactive Preview</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <span class="target-year verified-text"><i class="fa-solid fa-shield-check"></i> Authenticated Credential</span>
+              <span class="cert-type-pill">AI & DevSec</span>
+            </div>
+          </div>
+
+          <!-- Empty Certification Slot 1 -->
+          <div class="cert-card empty-cert-slot royal-card">
+            <div class="cert-header">
+              <div class="cert-icon-box empty-cert-icon">
+                <i class="fa-solid fa-plus fa-lg"></i>
+              </div>
+              <div class="cert-status-badge empty-cert-badge">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <span class="cert-issuer empty-issuer">+ NEXT CERTIFICATION</span>
+              <h3 class="cert-name empty-cert-title">+ Add Credential</h3>
+              <p class="cert-desc empty-cert-desc">
+                Reserved space for upcoming cybersecurity certifications, specialized security exams, and industry-standard accreditations.
+              </p>
+
+              <div class="cert-empty-box">
+                <i class="fa-solid fa-award"></i>
+                <span>Slot ready for upload & verification link</span>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <span class="target-year"><i class="fa-regular fa-clock"></i> Future Milestone</span>
+              <span class="cert-type-pill empty-pill">Available Slot</span>
+            </div>
+          </div>
+
+          <!-- Empty Certification Slot 2 -->
+          <div class="cert-card empty-cert-slot royal-card">
+            <div class="cert-header">
+              <div class="cert-icon-box empty-cert-icon">
+                <i class="fa-solid fa-plus fa-lg"></i>
+              </div>
+              <div class="cert-status-badge empty-cert-badge">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <span class="cert-issuer empty-issuer">+ NEXT CERTIFICATION</span>
+              <h3 class="cert-name empty-cert-title">+ Add Credential</h3>
+              <p class="cert-desc empty-cert-desc">
+                Reserved space for upcoming cybersecurity certifications, specialized security exams, and industry-standard accreditations.
+              </p>
+
+              <div class="cert-empty-box">
+                <i class="fa-solid fa-award"></i>
+                <span>Slot ready for upload & verification link</span>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <span class="target-year"><i class="fa-regular fa-clock"></i> Future Milestone</span>
+              <span class="cert-type-pill empty-pill">Available Slot</span>
+            </div>
+          </div>
+
+          <!-- Empty Certification Slot 3 -->
+          <div class="cert-card empty-cert-slot royal-card">
+            <div class="cert-header">
+              <div class="cert-icon-box empty-cert-icon">
+                <i class="fa-solid fa-plus fa-lg"></i>
+              </div>
+              <div class="cert-status-badge empty-cert-badge">
+                <i class="fa-solid fa-circle-dashed"></i>
+                <span>EMPTY SLOT</span>
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <span class="cert-issuer empty-issuer">+ NEXT CERTIFICATION</span>
+              <h3 class="cert-name empty-cert-title">+ Add Credential</h3>
+              <p class="cert-desc empty-cert-desc">
+                Reserved space for upcoming cybersecurity certifications, specialized security exams, and industry-standard accreditations.
+              </p>
+
+              <div class="cert-empty-box">
+                <i class="fa-solid fa-award"></i>
+                <span>Slot ready for upload & verification link</span>
+              </div>
+            </div>
+
+            <div class="cert-footer">
+              <span class="target-year"><i class="fa-regular fa-clock"></i> Future Milestone</span>
+              <span class="cert-type-pill empty-pill">Available Slot</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Verified Badges Notice -->
+        <div class="cert-notice-box royal-card">
+          <div class="notice-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="notice-text">
+            <h4>Verified Credential Repository</h4>
+            <p>Official cryptographic verification badges, direct PDF downloads, and Simplilearn/Microsoft completions are authenticated and viewable on-demand.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. MY HOBBIES SECTION ==================== -->
+    <section id="hobbies" class="section hobbies-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 07</span>
+          </div>
+          <h2 class="section-title">My Hobbies</h2>
+          <p class="section-subtitle">A glimpse into personal passions, market analysis, high-altitude expeditions, and continuous technical exploration.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-compass-drafting divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="hobbies-grid">
+          
+          <!-- Hobby 1: Stock Market Analyst (NEPSE) -->
+          <div class="hobby-card royal-card">
+            <div class="hobby-card-header">
+              <div class="hobby-icon-box stock-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="hobby-badge stock-badge">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <span>NEPSE MARKET</span>
+              </div>
+            </div>
+
+            <div class="hobby-card-body">
+              <h3 class="hobby-title">Stock Market Analyst (NEPSE)</h3>
+              <p class="hobby-subtitle">Equity Research, Technical Charting & Risk Management</p>
+              <p class="hobby-desc">
+                Analyzing the Nepal Stock Exchange (NEPSE) through fundamental valuation and price-action chart patterns, developing disciplined risk management strategies, and tracking macroeconomic equity cycles.
+              </p>
+            </div>
+
+            <div class="hobby-card-footer">
+              <span class="hobby-tag"><i class="fa-solid fa-chart-candlestick"></i> Price Action</span>
+              <span class="hobby-tag"><i class="fa-solid fa-coins"></i> Valuation</span>
+              <span class="hobby-tag"><i class="fa-solid fa-shield"></i> Risk Control</span>
+            </div>
+          </div>
+
+          <!-- Hobby 2: Exploring Nature (Travel and Trekking) -->
+          <div class="hobby-card royal-card trekking-hobby-card">
+            <div class="hobby-card-header">
+              <div class="hobby-icon-box nature-icon">
+                <i class="fa-solid fa-mountain-sun"></i>
+              </div>
+              <div class="hobby-badge nature-badge">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>TREKKING EXPEDITIONS</span>
+              </div>
+            </div>
+
+            <div class="hobby-card-body">
+              <h3 class="hobby-title">Exploring Nature (Travel and Trekking)</h3>
+              <p class="hobby-subtitle">High-Altitude Himalayan Expeditions & Wilderness Trails</p>
+              <p class="hobby-desc">
+                Passionate about high-altitude trekking across Nepal's majestic trails. Nature cultivates endurance, mental resilience, and a profound appreciation for remote alpine landscapes.
+              </p>
+
+              <!-- Two Trekking Destination Sub-Sections with Hyperlinks -->
+              <div class="trekking-destinations-grid">
+                
+                <!-- Destination 1: North Annapurna Base Camp -->
+                <div class="trek-dest-card">
+                  <div class="dest-top">
+                    <div class="dest-info">
+                      <span class="dest-pill"><i class="fa-solid fa-mountain"></i> 4,190m</span>
+                      <h4 class="dest-name">North Annapurna Base Camp (ABC)</h4>
+                      <p class="dest-sub">Narchyang, Myagdi • Panchakunda Lake & North Face</p>
+                    </div>
+                  </div>
+                  <a href="trekking-north-abc.html" class="btn-trek-album">
+                    <i class="fa-solid fa-images"></i>
+                    <span>View North ABC Album</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+
+                <!-- Destination 2: Dhorpatan -->
+                <div class="trek-dest-card">
+                  <div class="dest-top">
+                    <div class="dest-info">
+                      <span class="dest-pill dhorpatan-pill"><i class="fa-solid fa-tree"></i> Alpine Reserve</span>
+                      <h4 class="dest-name">Dhorpatan Hunting Reserve</h4>
+                      <p class="dest-sub">High Alpine Meadows, Shepherds & Wildlife</p>
+                    </div>
+                  </div>
+                  <a href="trekking-dhorpatan.html" class="btn-trek-album">
+                    <i class="fa-solid fa-images"></i>
+                    <span>View Dhorpatan Album</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="hobby-card-footer">
+              <span class="hobby-tag"><i class="fa-solid fa-mountain"></i> North ABC (4,190m)</span>
+              <span class="hobby-tag"><i class="fa-solid fa-compass"></i> Dhorpatan</span>
+              <span class="hobby-tag"><i class="fa-solid fa-photo-film"></i> Photo & Video Albums</span>
+            </div>
+          </div>
+
+          <!-- Hobby 3: Driving Cars and Bikes -->
+          <div class="hobby-card royal-card">
+            <div class="hobby-card-header">
+              <div class="hobby-icon-box drive-icon">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <div class="hobby-badge drive-badge">
+                <i class="fa-solid fa-route"></i>
+                <span>ROAD CRUISING</span>
+              </div>
+            </div>
+
+            <div class="hobby-card-body">
+              <h3 class="hobby-title">Driving Cars and Bikes</h3>
+              <p class="hobby-subtitle">Open-Road Journeys & Vehicular Precision</p>
+              <p class="hobby-desc">
+                Enjoying the focus and freedom of long-distance cruising on two and four wheels across diverse Nepali highways and scenic bends, appreciating mechanical engineering and scenic road exploration.
+              </p>
+            </div>
+
+            <div class="hobby-card-footer">
+              <span class="hobby-tag"><i class="fa-solid fa-motorcycle"></i> Scenic Rides</span>
+              <span class="hobby-tag"><i class="fa-solid fa-gauge-high"></i> Road Focus</span>
+              <span class="hobby-tag"><i class="fa-solid fa-wrench"></i> Mechanics</span>
+            </div>
+          </div>
+
+          <!-- Hobby 4: Cybersecurity -->
+          <div class="hobby-card royal-card">
+            <div class="hobby-card-header">
+              <div class="hobby-icon-box cyber-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="hobby-badge cyber-badge">
+                <i class="fa-solid fa-terminal"></i>
+                <span>CORE PASSION</span>
+              </div>
+            </div>
+
+            <div class="hobby-card-body">
+              <h3 class="hobby-title">Cybersecurity</h3>
+              <p class="hobby-subtitle">Hands-On Labs, Threat Analysis & CTF Solving</p>
+              <p class="hobby-desc">
+                A genuine passion that extends far beyond coursework — setting up home lab environments, experimenting with offensive tools in Kali Linux, exploring protocol vulnerabilities, and engineering robust defenses.
+              </p>
+            </div>
+
+            <div class="hobby-card-footer">
+              <span class="hobby-tag"><i class="fa-solid fa-network-wired"></i> Packet Labs</span>
+              <span class="hobby-tag"><i class="fa-solid fa-flag"></i> CTF Challenges</span>
+              <span class="hobby-tag"><i class="fa-solid fa-lock"></i> Hardening</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. CV / RESUME SECTION ==================== -->
+    <section id="cv-section" class="section cv-section section-reveal">
+      <div class="container">
+        
+        <div class="cv-card royal-card">
+          <div class="cv-card-decoration">
+            <i class="fa-solid fa-file-shield cv-bg-icon"></i>
+          </div>
+
+          <div class="cv-content-left">
+            <div class="section-tag cv-tag">
+              <span class="tag-hash">//</span>
+              <span>CURRICULUM VITAE</span>
+            </div>
+            <h2 class="cv-heading">Download Official Resume / CV</h2>
+            <p class="cv-description">
+              Access the complete academic summary, coursework breakdown, technical skills matrix, and professional background for Binayak Dhakal in standard PDF format.
+            </p>
+
+            <div class="cv-meta-points">
+              <div class="cv-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Updated for 2026/2027 Academic Year</span>
+              </div>
+              <div class="cv-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Includes Herald College BSc (Hons) Credentials</span>
+              </div>
+              <div class="cv-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Contact & Security Lab Portfolio Links</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-content-right">
+            <div class="cv-preview-box">
+              <div class="preview-mini-header">
+                <span class="doc-icon"><i class="fa-regular fa-file-pdf"></i></span>
+                <span class="doc-name">Binayak_Dhakal_CV.pdf</span>
+              </div>
+              <div class="preview-mini-body">
+                <div class="preview-line long"></div>
+                <div class="preview-line medium"></div>
+                <div class="preview-line short"></div>
+                <div class="preview-divider"></div>
+                <div class="preview-line long"></div>
+                <div class="preview-line medium"></div>
+              </div>
+              <div class="preview-status-tag">
+                <i class="fa-solid fa-clock"></i>
+                <span>PREVIEW / READY STATE</span>
+              </div>
+            </div>
+
+            <!-- Download Button (with interactive placeholder feedback) -->
+            <button class="btn btn-royal btn-lg btn-download-cv" id="main-cv-download-btn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV (PDF)</span>
+            </button>
+            <span class="cv-helper-text">Click to request latest PDF copy directly</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 9. CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section section-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-hash">//</span>
+            <span>SECTION 08</span>
+          </div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaboration, cybersecurity internships, or technical dialogue? Reach out via any channel below.</p>
+          <div class="section-divider">
+            <span class="divider-line"></span>
+            <i class="fa-solid fa-paper-plane divider-icon"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Contact Information Cards -->
+          <div class="contact-info-column">
+            
+            <!-- Email Card with Direct Compose Action -->
+            <a href="mailto:binayakdhakal8@gmail.com?subject=Portfolio%20Inquiry%20-%20Binayak%20Dhakal" class="contact-channel-card royal-card clickable-channel email-channel-card" title="Click to compose and send email directly">
+              <div class="channel-icon-box email-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">DIRECT EMAIL (CLICK TO SEND)</span>
+                <span class="channel-value">binayakdhakal8@gmail.com</span>
+                <span class="channel-sub">Click to open your email app and send directly</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/binayak-dhakal-94878131a/" target="_blank" rel="noopener noreferrer" class="contact-channel-card royal-card clickable-channel">
+              <div class="channel-icon-box linkedin-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">LINKEDIN NETWORK</span>
+                <span class="channel-value">binayak-dhakal-94878131a</span>
+                <span class="channel-sub">Connect for professional updates & networking</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" class="contact-channel-card royal-card clickable-channel">
+              <div class="channel-icon-box github-box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">GITHUB REPOSITORIES</span>
+                <span class="channel-value">github.com/binayakdhakal</span>
+                <span class="channel-sub">Explore security scripts, tools, and code</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+            <!-- Instagram Card -->
+            <a href="https://www.instagram.com/binayakd10/" target="_blank" rel="noopener noreferrer" class="contact-channel-card royal-card clickable-channel">
+              <div class="channel-icon-box instagram-box">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">INSTAGRAM</span>
+                <span class="channel-value">@binayakd10</span>
+                <span class="channel-sub">Personal life, hiking adventures & photography</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Right Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card royal-card">
+              <div class="form-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="form-header-title"><i class="fa-solid fa-shield-halved"></i> DIRECT SECURE DISPATCH</span>
+              </div>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name"><i class="fa-solid fa-user"></i> Your Full Name *</label>
+                    <input type="text" id="contact-name" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email"><i class="fa-solid fa-envelope-open-text"></i> Your Email Address (For Response) *</label>
+                    <input type="email" id="contact-email" name="email" placeholder="e.g. alex@example.com" required autocomplete="email">
+                    <span class="field-hint"><i class="fa-solid fa-reply"></i> Binayak will respond directly to this email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject"><i class="fa-solid fa-tag"></i> Subject / Topic *</label>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Cybersecurity Collaboration / Internship Inquiry" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message"><i class="fa-solid fa-message"></i> Message Content *</label>
+                  <textarea id="contact-message" name="message" rows="5" placeholder="Write your confidential message here..." required></textarea>
+                </div>
+
+                <div class="form-footer">
+                  <div class="form-encryption-notice">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Direct client-to-client transmission (Zero 3rd-party relays)</span>
+                  </div>
+                  <button type="submit" class="btn btn-royal" id="form-submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Direct Message</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  <!-- Direct Email Dispatch Modal (Zero Third Parties) -->
+  <div class="custom-dialog-modal" id="email-dispatch-modal" aria-hidden="true" role="dialog">
+    <div class="dialog-box-royal">
+      <div class="dialog-header-royal">
+        <span class="dialog-title"><i class="fa-solid fa-shield-halved"></i> Direct Email Dispatch</span>
+        <button class="dialog-close-btn" id="close-dispatch-modal-btn" aria-label="Close dialog"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="dialog-body-royal">
+        <p class="dialog-message">Your message is prepared for direct transmission to <strong>binayakdhakal8@gmail.com</strong>. Select your preferred email method (Zero 3rd-party relays):</p>
+        
+        <div class="dispatch-options-list">
+          <a href="#" id="dispatch-gmail-web-btn" target="_blank" rel="noopener noreferrer" class="dispatch-option-btn">
+            <div class="dispatch-option-icon"><i class="fa-brands fa-google"></i></div>
+            <div>
+              <span class="dispatch-option-title">Open in Web Gmail (Browser)</span>
+              <span class="dispatch-option-desc">Drafts directly in Gmail without needing any desktop mail application</span>
+            </div>
+          </a>
+
+          <a href="#" id="dispatch-default-app-btn" class="dispatch-option-btn">
+            <div class="dispatch-option-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div>
+              <span class="dispatch-option-title">Open in Default Mail App</span>
+              <span class="dispatch-option-desc">Opens Apple Mail, Outlook, Thunderbird, or Mobile Mail directly</span>
+            </div>
+          </a>
+
+          <button type="button" id="dispatch-copy-btn" class="dispatch-option-btn">
+            <div class="dispatch-option-icon"><i class="fa-regular fa-copy"></i></div>
+            <div>
+              <span class="dispatch-option-title">Copy Message to Clipboard</span>
+              <span class="dispatch-option-desc">Copy pre-formatted text to paste into any email composer manually</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="dialog-footer-royal">
+        <button class="dialog-btn dialog-btn-cancel" id="cancel-dispatch-modal-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="shield-badge mini-shield">
+            <span class="monogram-text">BD</span>
+          </div>
+          <div>
+            <span class="footer-name">Binayak Dhakal</span>
+            <span class="footer-role">Cybersecurity Student & Aspiring Analyst</span>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/binayak-dhakal-94878131a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/binayakd10/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:binayakdhakal8@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Binayak Dhakal. Built with high security rigor, royal elegance, and precision.
+        </p>
+        <p class="footer-location">
+          <i class="fa-solid fa-location-dot"></i> Herald College • Butwal / Kathmandu, Nepal
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js?v=3"></script>
+</body>
+</html>
