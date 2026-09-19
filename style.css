@@ -2329,6 +2329,16 @@ ul, ol {
   justify-content: center;
 }
 
+.kali-cert-icon {
+  background: #0f1c2e;
+  border: 1.5px solid rgba(85, 122, 233, 0.4);
+  color: #557ae9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
 .cert-thumbnail-box {
   position: relative;
   border-radius: var(--radius-sm);
@@ -2585,7 +2595,9 @@ ul, ol {
   transition: opacity var(--transition-fast);
 }
 
-.cert-modal-overlay.is-active {
+.cert-modal-overlay.is-active,
+.cert-modal-overlay.active,
+.cert-modal-overlay.open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -2605,7 +2617,9 @@ ul, ol {
   transition: transform var(--transition-smooth);
 }
 
-.cert-modal-overlay.is-active .cert-modal-dialog {
+.cert-modal-overlay.is-active .cert-modal-dialog,
+.cert-modal-overlay.active .cert-modal-dialog,
+.cert-modal-overlay.open .cert-modal-dialog {
   transform: scale(1) translateY(0);
 }
 

@@ -286,12 +286,27 @@ document.addEventListener('DOMContentLoaded', () => {
      8b. Certificate Lightbox Modal Logic
      -------------------------------------------------------------------------- */
   const certModal = document.getElementById('cert-modal-overlay');
-  const openCertModalBtn = document.getElementById('btn-open-cert-modal');
-  const certThumbTrigger = document.getElementById('cert-thumb-trigger');
+  const certModalTitle = document.getElementById('cert-modal-title');
+  const certModalSub = document.getElementById('cert-modal-sub');
+  const certModalImg = document.getElementById('cert-modal-img');
+  const certModalDownload = document.getElementById('cert-modal-download');
+  const certModalTabLink = document.getElementById('cert-modal-tab-link');
+  const certModalVerifyText = document.getElementById('cert-modal-verify-text');
   const closeCertModalBtn = document.getElementById('close-cert-modal-btn');
 
-  function openCertModal() {
+  function openCertModalWithData(data) {
     if (!certModal) return;
+    if (data) {
+      if (certModalTitle && data.title) certModalTitle.textContent = data.title;
+      if (certModalSub && data.sub) certModalSub.textContent = data.sub;
+      if (certModalImg && data.img) certModalImg.src = data.img;
+      if (certModalDownload && data.pdf) {
+        certModalDownload.href = data.pdf;
+        certModalDownload.setAttribute('download', data.download || 'Certificate.pdf');
+      }
+      if (certModalTabLink && data.pdf) certModalTabLink.href = data.pdf;
+      if (certModalVerifyText && data.verify) certModalVerifyText.textContent = data.verify;
+    }
     certModal.classList.add('is-active');
     certModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -304,13 +319,20 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  if (openCertModalBtn) {
-    openCertModalBtn.addEventListener('click', openCertModal);
-  }
-
-  if (certThumbTrigger) {
-    certThumbTrigger.addEventListener('click', openCertModal);
-  }
+  document.querySelectorAll('.open-cert-modal-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const data = {
+        title: trigger.getAttribute('data-cert-title') || 'Verified Credential Document',
+        sub: trigger.getAttribute('data-cert-sub') || '',
+        img: trigger.getAttribute('data-cert-img') || '',
+        pdf: trigger.getAttribute('data-cert-pdf') || '',
+        download: trigger.getAttribute('data-cert-download') || 'Certificate.pdf',
+        verify: trigger.getAttribute('data-cert-verify') || 'Authentic Verification • Issued to Binayak Dhakal'
+      };
+      openCertModalWithData(data);
+    });
+  });
 
   if (closeCertModalBtn) {
     closeCertModalBtn.addEventListener('click', closeCertModal);

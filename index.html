@@ -952,12 +952,12 @@
               <span class="monogram-text">BD</span>
             </div>
             <div>
-              <h3 class="cert-modal-title">Verified Credential Document</h3>
-              <p class="cert-modal-sub">Microsoft • Simplilearn SkillUp | Code: 10467436</p>
+              <h3 class="cert-modal-title" id="cert-modal-title">Verified Credential Document</h3>
+              <p class="cert-modal-sub" id="cert-modal-sub">Microsoft • Simplilearn SkillUp | Code: 10467436</p>
             </div>
           </div>
           <div class="cert-modal-actions">
-            <a href="assets/prompt_engineering_certification.pdf" download="Binayak_Dhakal_Prompt_Engineering_Certificate.pdf" class="btn btn-gold btn-sm" title="Download Official PDF">
+            <a href="assets/prompt_engineering_certification.pdf" id="cert-modal-download" download="Binayak_Dhakal_Prompt_Engineering_Certificate.pdf" class="btn btn-gold btn-sm" title="Download Official PDF">
               <i class="fa-solid fa-download"></i>
               <span>Download PDF</span>
             </a>
@@ -969,16 +969,16 @@
 
         <div class="cert-modal-body">
           <div class="cert-full-image-wrap">
-            <img src="assets/prompt_engineering_certification.png" alt="Official Declaration of Completion: Introduction to Prompt Engineering with GitHub Copilot - Binayak Dhakal">
+            <img id="cert-modal-img" src="assets/prompt_engineering_certification.png" alt="Official Certificate Preview">
           </div>
         </div>
 
         <div class="cert-modal-footer">
           <div class="cert-verification-badge">
             <i class="fa-solid fa-circle-check"></i>
-            <span>Authentic Verification • Issued to Binayak Dhakal • 14th July 2026</span>
+            <span id="cert-modal-verify-text">Authentic Verification • Issued to Binayak Dhakal • 14th July 2026</span>
           </div>
-          <a href="assets/prompt_engineering_certification.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-royal btn-sm">
+          <a href="assets/prompt_engineering_certification.pdf" id="cert-modal-tab-link" target="_blank" rel="noopener noreferrer" class="btn btn-royal btn-sm">
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span>Open in New Tab</span>
           </a>
@@ -1025,7 +1025,14 @@
             </div>
 
             <!-- Certificate Thumbnail with Click to Preview -->
-            <div class="cert-thumbnail-box" id="cert-thumb-trigger" title="Click to view full certificate">
+            <div class="cert-thumbnail-box open-cert-modal-trigger" id="cert-thumb-trigger"
+                 title="Click to view full certificate"
+                 data-cert-title="Verified Credential Document"
+                 data-cert-sub="Microsoft • Simplilearn SkillUp | Code: 10467436"
+                 data-cert-img="assets/prompt_engineering_certification.png"
+                 data-cert-pdf="assets/prompt_engineering_certification.pdf"
+                 data-cert-download="Binayak_Dhakal_Prompt_Engineering_Certificate.pdf"
+                 data-cert-verify="Authentic Verification • Issued to Binayak Dhakal • 14th July 2026">
               <img src="assets/prompt_engineering_certification.png" alt="Declaration of Completion - Introduction to Prompt Engineering with GitHub Copilot - Binayak Dhakal">
               <div class="cert-thumb-overlay">
                 <i class="fa-solid fa-magnifying-glass-plus"></i>
@@ -1070,7 +1077,13 @@
                   <span>Official Certificate (PDF)</span>
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
-                <button type="button" class="btn-cert-secondary" id="btn-open-cert-modal">
+                <button type="button" class="btn-cert-secondary open-cert-modal-trigger" id="btn-open-cert-modal"
+                        data-cert-title="Verified Credential Document"
+                        data-cert-sub="Microsoft • Simplilearn SkillUp | Code: 10467436"
+                        data-cert-img="assets/prompt_engineering_certification.png"
+                        data-cert-pdf="assets/prompt_engineering_certification.pdf"
+                        data-cert-download="Binayak_Dhakal_Prompt_Engineering_Certificate.pdf"
+                        data-cert-verify="Authentic Verification • Issued to Binayak Dhakal • 14th July 2026">
                   <i class="fa-solid fa-eye"></i>
                   <span>Interactive Preview</span>
                 </button>
@@ -1083,34 +1096,85 @@
             </div>
           </div>
 
-          <!-- Empty Certification Slot 1 -->
-          <div class="cert-card empty-cert-slot royal-card">
+          <!-- Verified Certification: Introduction to Kali Linux Basics -->
+          <div class="cert-card earned-cert royal-card">
             <div class="cert-header">
-              <div class="cert-icon-box empty-cert-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
+              <div class="cert-icon-box kali-cert-icon">
+                <i class="fa-brands fa-linux"></i>
               </div>
-              <div class="cert-status-badge empty-cert-badge">
-                <i class="fa-solid fa-circle-dashed"></i>
-                <span>EMPTY SLOT</span>
+              <div class="cert-status-badge verified">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>VERIFIED COMPLETION</span>
+              </div>
+            </div>
+
+            <!-- Certificate Thumbnail with Click to Preview -->
+            <div class="cert-thumbnail-box open-cert-modal-trigger" 
+                 title="Click to view full certificate"
+                 data-cert-title="Verified Credential Document"
+                 data-cert-sub="Simplilearn SkillUp | Code: 10700539"
+                 data-cert-img="assets/kali_linux_basics_certification.png"
+                 data-cert-pdf="assets/kali_linux_basics_certification.pdf"
+                 data-cert-download="Binayak_Dhakal_Kali_Linux_Basics_Certificate.pdf"
+                 data-cert-verify="Authentic Verification • Issued to Binayak Dhakal • 6th September 2026">
+              <img src="assets/kali_linux_basics_certification.png" alt="Certificate of Completion - Introduction to Kali Linux Basics - Binayak Dhakal">
+              <div class="cert-thumb-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Full Certificate</span>
               </div>
             </div>
 
             <div class="cert-body">
-              <span class="cert-issuer empty-issuer">+ NEXT CERTIFICATION</span>
-              <h3 class="cert-name empty-cert-title">+ Add Credential</h3>
-              <p class="cert-desc empty-cert-desc">
-                Reserved space for upcoming cybersecurity certifications, specialized security exams, and industry-standard accreditations.
+              <div class="cert-issuer-badge">
+                <span>SIMPLILEARN SKILLUP</span>
+              </div>
+              
+              <h3 class="cert-name">
+                <a href="assets/kali_linux_basics_certification.pdf" target="_blank" rel="noopener noreferrer" class="cert-title-link" title="Open official certificate document">
+                  Introduction to Kali Linux Basics
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </h3>
+              
+              <p class="cert-desc">
+                Authorized certificate of completion recognizing foundational expertise in Kali Linux architecture, terminal command mastery, penetration testing environment setup, and essential defensive security tooling.
               </p>
 
-              <div class="cert-empty-box">
-                <i class="fa-solid fa-award"></i>
-                <span>Slot ready for upload & verification link</span>
+              <!-- Credential Metadata Details -->
+              <div class="cert-meta-grid">
+                <div class="cert-meta-item">
+                  <span class="meta-label"><i class="fa-regular fa-calendar"></i> ISSUE DATE</span>
+                  <span class="meta-val">6th September 2026</span>
+                </div>
+                <div class="cert-meta-item">
+                  <span class="meta-label"><i class="fa-solid fa-barcode"></i> CERTIFICATE CODE</span>
+                  <span class="meta-val">10700539</span>
+                </div>
+              </div>
+
+              <!-- Hyperlink / Verification Action Buttons -->
+              <div class="cert-actions-row">
+                <a href="assets/kali_linux_basics_certification.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-primary">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <span>Official Certificate (PDF)</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button type="button" class="btn-cert-secondary open-cert-modal-trigger"
+                        data-cert-title="Verified Credential Document"
+                        data-cert-sub="Simplilearn SkillUp | Code: 10700539"
+                        data-cert-img="assets/kali_linux_basics_certification.png"
+                        data-cert-pdf="assets/kali_linux_basics_certification.pdf"
+                        data-cert-download="Binayak_Dhakal_Kali_Linux_Basics_Certificate.pdf"
+                        data-cert-verify="Authentic Verification • Issued to Binayak Dhakal • 6th September 2026">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Interactive Preview</span>
+                </button>
               </div>
             </div>
 
             <div class="cert-footer">
-              <span class="target-year"><i class="fa-regular fa-clock"></i> Future Milestone</span>
-              <span class="cert-type-pill empty-pill">Available Slot</span>
+              <span class="target-year verified-text"><i class="fa-solid fa-shield-check"></i> Authenticated Credential</span>
+              <span class="cert-type-pill">Linux & Security</span>
             </div>
           </div>
 
