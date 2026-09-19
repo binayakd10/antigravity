@@ -986,6 +986,28 @@
       </div>
     </div>
 
+    <!-- Trekking Album Password Prompt Modal -->
+    <div class="custom-dialog-modal" id="album-gate-modal" aria-hidden="true" role="dialog" aria-labelledby="album-gate-title">
+      <div class="dialog-box-royal">
+        <div class="dialog-header-royal">
+          <span class="dialog-title" id="album-gate-title"><i class="fa-solid fa-mountain-sun"></i> Protected Expedition Album</span>
+          <button class="dialog-close-btn" id="close-album-gate-btn" aria-label="Close dialog"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="dialog-body-royal">
+          <p class="dialog-message" id="album-gate-message">This trekking expedition album is private. Please enter the passcode to view the high-altitude photography and video gallery.</p>
+          <div class="dialog-input-wrap">
+            <label for="album-gate-passcode-input" class="dialog-input-label">EXPEDITION PASSCODE</label>
+            <input type="password" id="album-gate-passcode-input" class="dialog-input-field" placeholder="Enter password..." autocomplete="current-password">
+            <span class="dialog-error-msg" id="album-gate-error" style="display:none; color: var(--accent-rose); font-size: 0.82rem; font-weight: 600; margin-top: 0.25rem;"><i class="fa-solid fa-circle-exclamation"></i> Incorrect password. Please try again.</span>
+          </div>
+        </div>
+        <div class="dialog-footer-royal">
+          <button class="dialog-btn dialog-btn-cancel" id="cancel-album-gate-btn">Cancel</button>
+          <button class="dialog-btn dialog-btn-confirm" id="submit-album-gate-btn"><i class="fa-solid fa-lock-open"></i> Unlock & Open Album</button>
+        </div>
+      </div>
+    </div>
+
     <!-- ==================== 6. CERTIFICATIONS SECTION ==================== -->
     <section id="certifications" class="section cert-section section-reveal">
       <div class="container">

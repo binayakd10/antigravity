@@ -28,6 +28,7 @@ class TrekkingAlbumManager {
     await this.openDatabase();
     this.bindDOM();
     this.bindCustomModals();
+    this.bindVisitorGate();
     this.updateOwnerUI();
     this.loadMedia();
   }
@@ -252,6 +253,71 @@ class TrekkingAlbumManager {
       this.deleteModal.addEventListener('click', (e) => {
         if (e.target === this.deleteModal) this.closeDeleteModal();
       });
+    }
+  }
+
+  bindVisitorGate() {
+    this.visitorGateModal = document.getElementById('album-visitor-gate-modal');
+    this.visitorPasscodeInput = document.getElementById('visitor-passcode-input');
+    this.visitorGateError = document.getElementById('visitor-gate-error');
+    this.submitVisitorGateBtn = document.getElementById('submit-visitor-gate-btn');
+
+    const isUnlocked = sessionStorage.getItem('binayak_album_unlocked') === 'true';
+
+    if (!isUnlocked && this.visitorGateModal) {
+      this.openVisitorGate();
+    }
+
+    if (this.submitVisitorGateBtn) {
+      this.submitVisitorGateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.processVisitorGateLogin();
+      });
+    }
+
+    if (this.visitorPasscodeInput) {
+      this.visitorPasscodeInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          this.processVisitorGateLogin();
+        }
+      });
+    }
+  }
+
+  openVisitorGate() {
+    if (!this.visitorGateModal) return;
+    this.visitorGateModal.classList.add('is-active');
+    this.visitorGateModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (this.visitorPasscodeInput) {
+      this.visitorPasscodeInput.value = '';
+      setTimeout(() => this.visitorPasscodeInput.focus(), 150);
+    }
+  }
+
+  closeVisitorGate() {
+    if (!this.visitorGateModal) return;
+    this.visitorGateModal.classList.remove('is-active');
+    this.visitorGateModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  processVisitorGateLogin() {
+    const val = this.visitorPasscodeInput ? this.visitorPasscodeInput.value.trim().toLowerCase() : '';
+    const clean = val.replace(/\s+/g, ' ');
+    const noSpace = clean.replace(/\s+/g, '');
+    if (clean === 'khulja simsim' || noSpace === 'khuljasimsim' || val === 'bam') {
+      sessionStorage.setItem('binayak_album_unlocked', 'true');
+      this.closeVisitorGate();
+      this.showToastNotification('Expedition Unlocked', 'Welcome to ' + this.albumTitle);
+    } else {
+      if (this.visitorGateError) this.visitorGateError.style.display = 'block';
+      if (this.visitorPasscodeInput) {
+        this.visitorPasscodeInput.classList.add('input-error');
+        this.visitorPasscodeInput.focus();
+        this.visitorPasscodeInput.select();
+      }
     }
   }
 

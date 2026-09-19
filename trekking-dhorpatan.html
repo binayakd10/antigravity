@@ -280,6 +280,28 @@
     </div>
   </div>
 
+  <!-- Visitor Password Access Gate Modal -->
+  <div class="custom-dialog-modal" id="album-visitor-gate-modal" aria-hidden="true" role="dialog" style="z-index: 100000;">
+    <div class="dialog-box-royal">
+      <div class="dialog-header-royal">
+        <span class="dialog-title"><i class="fa-solid fa-mountain-sun"></i> Protected Expedition Album</span>
+        <a href="index.html#hobbies" class="dialog-close-btn" title="Back to Portfolio"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="dialog-body-royal">
+        <p class="dialog-message">This trekking expedition album is private. Please enter the passcode to view the high-altitude photography and video gallery.</p>
+        <div class="dialog-input-wrap">
+          <label for="visitor-passcode-input" class="dialog-input-label">EXPEDITION PASSCODE</label>
+          <input type="password" id="visitor-passcode-input" class="dialog-input-field" placeholder="Enter password..." autocomplete="current-password">
+          <span class="dialog-error-msg" id="visitor-gate-error" style="display:none; color: var(--accent-rose); font-size: 0.82rem; font-weight: 600; margin-top: 0.25rem;"><i class="fa-solid fa-circle-exclamation"></i> Incorrect password. Please try again.</span>
+        </div>
+      </div>
+      <div class="dialog-footer-royal">
+        <a href="index.html#hobbies" class="dialog-btn dialog-btn-cancel"><i class="fa-solid fa-arrow-left"></i> Portfolio</a>
+        <button class="dialog-btn dialog-btn-confirm" id="submit-visitor-gate-btn"><i class="fa-solid fa-lock-open"></i> Unlock Album</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Custom Owner Unlock Modal -->
   <div class="custom-dialog-modal" id="owner-auth-modal" aria-hidden="true" role="dialog">
     <div class="dialog-box-royal">

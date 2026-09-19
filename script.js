@@ -346,11 +346,125 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --------------------------------------------------------------------------
+     8c. Trekking Album Password Gatekeeper (khulja simsim)
+     -------------------------------------------------------------------------- */
+  const albumGateModal = document.getElementById('album-gate-modal');
+  const albumGateInput = document.getElementById('album-gate-passcode-input');
+  const albumGateError = document.getElementById('album-gate-error');
+  const submitAlbumGateBtn = document.getElementById('submit-album-gate-btn');
+  const cancelAlbumGateBtn = document.getElementById('cancel-album-gate-btn');
+  const closeAlbumGateBtn = document.getElementById('close-album-gate-btn');
+  let targetAlbumUrl = null;
+
+  function isAlbumUnlocked() {
+    return sessionStorage.getItem('binayak_album_unlocked') === 'true';
+  }
+
+  function checkAlbumPassword(val) {
+    if (!val) return false;
+    const clean = val.trim().toLowerCase().replace(/\s+/g, ' ');
+    const noSpace = clean.replace(/\s+/g, '');
+    return clean === 'khulja simsim' || noSpace === 'khuljasimsim';
+  }
+
+  function openAlbumGate(url) {
+    if (!albumGateModal) {
+      window.location.href = url;
+      return;
+    }
+    targetAlbumUrl = url;
+    if (albumGateError) albumGateError.style.display = 'none';
+    if (albumGateInput) {
+      albumGateInput.value = '';
+      albumGateInput.classList.remove('input-error');
+    }
+    albumGateModal.classList.add('is-active');
+    albumGateModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      if (albumGateInput) albumGateInput.focus();
+    }, 150);
+  }
+
+  function closeAlbumGate() {
+    if (!albumGateModal) return;
+    albumGateModal.classList.remove('is-active');
+    albumGateModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    targetAlbumUrl = null;
+  }
+
+  function submitAlbumGate() {
+    const val = albumGateInput ? albumGateInput.value : '';
+    if (checkAlbumPassword(val)) {
+      sessionStorage.setItem('binayak_album_unlocked', 'true');
+      closeAlbumGate();
+      if (targetAlbumUrl) {
+        window.location.href = targetAlbumUrl;
+      }
+    } else {
+      if (albumGateError) albumGateError.style.display = 'block';
+      if (albumGateInput) {
+        albumGateInput.classList.add('input-error');
+        albumGateInput.focus();
+        albumGateInput.select();
+      }
+    }
+  }
+
+  document.querySelectorAll('.btn-trek-album').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const url = btn.getAttribute('href');
+      if (!isAlbumUnlocked()) {
+        e.preventDefault();
+        openAlbumGate(url);
+      }
+    });
+  });
+
+  if (submitAlbumGateBtn) {
+    submitAlbumGateBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      submitAlbumGate();
+    });
+  }
+
+  if (albumGateInput) {
+    albumGateInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        submitAlbumGate();
+      }
+    });
+  }
+
+  if (cancelAlbumGateBtn) {
+    cancelAlbumGateBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeAlbumGate();
+    });
+  }
+
+  if (closeAlbumGateBtn) {
+    closeAlbumGateBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeAlbumGate();
+    });
+  }
+
+  if (albumGateModal) {
+    albumGateModal.addEventListener('click', (e) => {
+      if (e.target === albumGateModal) closeAlbumGate();
+    });
+  }
+
   // Global ESC Key Listener for all modals
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeProjectModal();
       closeCertModal();
+      closeAlbumGate();
     }
   });
 
